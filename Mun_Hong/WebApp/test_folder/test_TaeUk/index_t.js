@@ -1,0 +1,3 @@
+$('.navbar-brand').click(function() {
+	
+});

@@ -1,0 +1,18 @@
+<script src="//code.jquery.com/jquery.min.js"></script>
+<script>
+	function add() {
+		$.ajax({
+			url: "add.php",
+			type: "post",
+			//data: $("form").serialize(),
+			data: {number1:false,number2:true},
+			success: function(data){
+				alert(data);
+			}
+		});
+	}
+</script>
+<form>
+	<input type="text" name="number1"> ADD <input type="text" name="number2"><br>
+	<input type="button" onclick="add()" value="결과">
+</form>

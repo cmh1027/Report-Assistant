@@ -1,0 +1,130 @@
+* {
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+}
+
+.header{
+  background-color: #f1f1f1;
+  padding: none;
+  text-align: center;
+}
+
+.column {
+  float: left;
+  height: 600px;
+  padding: 10px;
+  width: 100%;
+}
+
+.column.left{
+  width: 20%;
+  background-color: #bbb;
+}
+
+.column.right{
+  width:10%;
+  background-color: #ccc;
+}
+
+.column.middle {
+  width: 70%;
+  background-color: #aaa;
+}
+
+.row::after{
+  content: "";
+  display: table;
+  clear:both;
+}
+
+.footer{
+  background-color: #f1f1f1;
+  padding: 10px;
+  text-align: center;
+}
+
+column.left .sidenav {
+  position: fixed;
+  z-index: 1;
+  top:0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+}
+
+.sidenav a{
+  color: white;
+  padding: 16px;
+  text-decoration: none;
+  display: block;
+}
+.header .topnav{
+  overflow: hidden;
+  background-color: #333;
+}
+
+.header .topnav a{
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+
+.header .login{
+  background-color: #aaa;
+  height:50px;
+}
+
+.header .login .form input{
+  float:right;
+  width: 200px;
+}
+
+table{
+  border-collapse: collapse;
+  width: 100%;
+  table-layout: auto;
+}
+
+th, td{
+  text-align: left;
+  padding: 8px;
+}
+
+.column.middle .num {
+  width:10%;
+}
+
+.column.middle .nick {
+  width: 15%;
+}
+
+.column.middle .name {
+  width: 45%;
+}
+
+.column.middle .date{
+  width: 20%;
+}
+
+.boardfoot {
+  margin-left: 70%;
+  float:right;
+}
+
+@media (max-width: 600px) {
+  .column.left, .column.right. .column.middle {
+    width: 100%;
+  }
+}
+
+/* paging 요소들 */
+
+
+/* write.php 요소들*/
